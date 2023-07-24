@@ -1,0 +1,11 @@
+{% extends "/shared/base.html" %}
+
+{% block content %}
+
+<h1>All Characters</h1>
+
+{% for character in characters %}
+  <p>{{ character.name }}</p>
+{% endfor %}
+
+{% endblock content %}
